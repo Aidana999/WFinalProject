@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">iStore</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">главная</a></li>
+            <li><a href="#">о нас</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">продукция <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Apple Watch</a></li>
+                </ul>
+            </li>
+            <li><a href="#">статьи</a></li>
+            <li><a href="#">контакты</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="search">
+            </div>
+            <button type="submit" class="btn btn-default">поиск</button>
+        </form>
+    </div>
+</nav>
+<body>
+
+<!--start section.contacts-->
+<section class="contacts">
+    <div class="container">
+
+        <h2 class="caption_main">Контакты</h2>
+        <div class="row_flex">
+            <div class="col-md-6 col-sm-12 col-xs-12 box">
+                <div class="box_contact">
+                    <p class="contact"><i class="lnr lnr-map-marker"></i><b>Адре:</b>ул. Манаса, 40 (пер ул. Киевская)</p>
+                    <p class="contact"><i class="lnr lnr-phone-handset"></i><b>Телефо:</b>+996 (555) 802 000/ +996 (707) 682 536</p>
+                    <p class="contact mb10"><i class="lnr lnr-envelope"></i><b>Электронная почта:</b> istorekg@gmail.com</p>
+                    <p class="contact"><i class="lnr lnr-clock"></i><b>Режим работы:</b>Пн - Вс | 10:00 - 20:00</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12 box">
+                <h4 class="title_form">Форма обратной связи</h4>
+                <div class="block_form">
+                    <div role="form" class="wpcf7" id="wpcf7-f152-o1" lang="ru-RU" dir="ltr">
+                        <div class="screen-reader-response"></div>
+                        <form action="/kontakty/#wpcf7-f152-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <div style="display: none;">
+                                <input type="hidden" name="_wpcf7" value="152" />
+                                <input type="hidden" name="_wpcf7_version" value="5.0.5" />
+                                <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f152-o1" />
+                                <input type="hidden" name="_wpcf7_container_post" value="0" />
+                            </div>
+                            <div class="row_flex">
+                                <div class="col-md-6 col-sm-6 col-xs-12 box">
+                                    <div class="group">
+                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Имя" /></span>
+                                    </div>
+                                    <div class="group">
+                                        <span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Телефон" /></span>
+                                    </div>
+                                    <div class="group">
+                                        <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Тема" /></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12 box">
+                                    <div class="group">
+                                        <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="20" rows="6" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Ваше сообщение"></textarea></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group_btn">
+                                <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit btn_main" />
+                            </div>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end section.contacts-->
+<!-- Indicators -->
+<ol class="carousel-indicators">
+    <li class="item1 active"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+</ol>
+</body>
+</html>

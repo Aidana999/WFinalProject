@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">iStore</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">главная</a></li>
+            <li><a href="#">о нас</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">продукция <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Apple Watch</a></li>
+                </ul>
+            </li>
+            <li><a href="#">статьи</a></li>
+            <li><a href="#">контакты</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" action="/action_page.php">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" name="search">
+            </div>
+            <button type="submit" class="btn btn-default">поиск</button>
+        </form>
+    </div>
+</nav>
+<div class="container">
+    <h2>iStore</h2>
+    <img class="img-responsive" src="https://www.ormile.co.il/wp-content/uploads/2016/10/st6.jpg" alt="iStore" >
+</div>
+<!--start section.about-->
+<section class="about">
+    <div class="container">
+        <div class="row_flex">
+
+            <div class="col-md-9 col-sm-9 boxes_content">
+                <div class="block_content">
+                    <h5>У нас можно приобрести всю линейку продукций компании Apple по самым привлекательным ценам.</h5>
+                    <h4 class="title">Наши преимущества:</h4>
+                    <div class="box_advantages row_flex">
+                        <div class="item_advan">
+                            <p class="title_item">Консультация и сервис:</p>
+                            <ul>
+                                <li>- профессиональный и приветливый персонал;</li>
+                                <li>- подбор и предложение только оптимальных решений;</li>
+                                <li>- персональный менеджер.</li>
+                            </ul>
+                        </div>
+                        <div class="item_advan">
+                            <p class="title_item">Цены и расчеты:</p>
+                            <ul>
+                                <li>- любая форма оплаты: наличный и безналичный расчет, банковские карты Visa;</li>
+                                <li>- возможность приобрести продукцию в кредит</li>
+                            </ul>
+                        </div>
+                        <div class="item_advan">
+                            <p class="title_item">Послепродажные сервисы:</p>
+                            <ul>
+                                <li>- консультации по применению;</li>
+                                <li>- гарантийное обслуживание.</li>
+                            </ul>
+                        </div>
+                        <div class="item_advan">
+                            <p class="title_item">Всегда в наличии:</p>
+                            <ul>
+                                <li>- Айфоны, Айпады, Макбуки, а также оригинальные аксессуары для Ваших гаджетов</li>
+                                <li>- Мы ждем Вас по адресу: пр.Манаса 40/Киевская</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 block_time">
+                <div class="img_wrapper"><img src="https://istore.kg/wp-content/themes/iStore_NEW/image/svg/clock.svg" alt="clock"width="100" height="100"> </div>
+                <ul class="list_time">
+                    <li><span>Пн.</span>10:00 - 20:00</li>
+                    <li><span>Вт.</span>10:00 - 20:00</li>
+                    <li><span>Ср.</span>10:00 - 20:00</li>
+                    <li><span>Чт.</span>10:00 - 20:00</li>
+                    <li><span>Пт.</span>10:00 - 20:00</li>
+                    <li><span>Сб.</span>10:00 - 20:00</li>
+                    <li><span>Вс.</span>10:00 - 20:00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--end section.about-->
+<div class="container">
+    <h2>iStore</h2>
+    <p>Фирменный магазин Apple в Бишкеке.:</p>
+    <dl class="dl-horizontal"> <dt> <span class="glyphicon glyphicon-phone"></span>Телефон:</dt>
+        <dd>+996 (555) 802 000 / +996 (707) 682 536</dd>
+        <dt><span class="glyphicon glyphicon-map-marker"></span>Адрес:</dt>
+        <dd>ул. Манаса, 40 (пер ул. Киевская)</dd>
+        <dt><span class="glyphicon glyphicon-time"></span>Режим работы:</dt>
+        <dd>Пн - Вс | 10:00 - 20:00</dd>
+    </dl>
+</div>
+</body>
+</html>
