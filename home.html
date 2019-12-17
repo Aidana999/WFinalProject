@@ -4,6 +4,7 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="home.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -18,19 +19,20 @@
         </div>
         <ul class="nav navbar-nav">
             <li class="active"><a href="#">главная</a></li>
-            <li><a href="#">о нас</a></li>
+            <li><a href="index.html">о нас</a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">продукция <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Mac</a></li>
-                    <li><a href="#">iPhone</a></li>
-                    <li><a href="#">Apple Watch</a></li>
+                    <li><a onclick="funcMac()" href="#">Mac</a></li>
+                    <li><a onclick="funcMac()" href="#">iPhone</a></li>
+                    <li><a onclick="funcMac()" href="#">Apple Watch</a></li>
                     <li class="dropdown-header">гаджеты</li>
-                    <li><a href="#">GoPro</a></li>
-                    <li><a href="#">Beats</a></li>
+                    <li><a onclick="funcMac()"href="#">GoPro</a></li>
+                    <li><a onclick="funcMac()"href="#">Beats</a></li>
                 </ul>
             </li>
-            <li><a href="#">статьи</a></li>
-            <li><a href="#">контакты</a></li>
+            <li><a href="connect.html">сервис</a></li>
+            <li><a href="support.html">статьи</a></li>
+            <li><a href="contact.html">контакты</a></li>
         </ul>
         <form class="navbar-form navbar-left" action="/action_page.php">
             <div class="form-group">
@@ -97,50 +99,76 @@
     <div class="row">
         <div class="col-md-4">
             <h2>13-inch MacBook Pro</h2>
-            <img src="https://img.mvideo.ru/Pdb/30036512b.jpg" alt="iPad" width="254" height="236">
-            <p>13.3-inch Retina display1<br>
-                Up to quad-core Intel Core i7 processor<br>
-                Up to 16GB of memory<br>
-                Up to 2TB of storage2<br>
-                Up to 10 hours of battery life3<br>
-                Touch Bar and Touch ID<br>
-                Backlit keyboard</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a></p>
+            <img src="https://www.apple.com/ru/macbook-pro-13/images/shared/og__emocl5abry0y.png?201912040308%22" alt="MacBook" width="254" height="236">
+            <p></p>
+            <p>Дисплей Retina 13,3 дюйма1<br>
+            <p></p>
+                Процессор Intel Core i7 до 4 ядер<br>
+            <p></p>
+                Память до 16 ГБ<br>
+            <p></p>
+                Накопитель до 2 ТБ2<br>
+            <p></p>
+                Аккумулятор до 10 часов3<br>
+            <p></p>
+                Touch Bar и Touch ID<br>
+            <p></p>
+                Клавиатура с подсветкой</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Подробнее&raquo;</a></p>
         </div>
         <div class="col-md-4">
             <h2>iPhone 11 Pro</h2>
-            <img src="https://img.mvideo.ru/Pdb/30036512b.jpg" alt="iPad" width="254" height="236">
-            <p>All-new triple-camera system (Ultra Wide, Wide, Telephoto)<br>
-                Up to 20 hours of video playback<br>
-                Water-resistant to a depth of 4 metres for up to 30 minutes<br>
-                5.8- or 6.5-inch Super Retina XDR display</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Learn more&raquo;</a></p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfqUOZyhWSlmuuKHGy_qSAKG_6GZhEyp8QIpTGsO6_HOSoQKoElA&s" alt="iPhone11" width="254" height="236">
+           <p></p>
+            <p>Новая система трёх камер (сверхшироко­угольная, широкоугольная и телефото)<br>
+<p></p>
+                До 20 часов воспроизведения видео1<br>
+            <p></p>
+                Защита от воды при погружении на глубину до 4 метров длительностью до 30 минут2<br>
+            <p></p>
+                Дисплей Super Retina XDR 5,8 дюйма или 6,5 дюйма3<br>
+            <p><a class="btn btn-secondary" href="#" role="button">Подробнее&raquo;</a></p>
         </div>
         <div class="col-md-4">
             <h2>iPad Air</h2>
             <img src="https://img.mvideo.ru/Pdb/30036512b.jpg" alt="iPad" width="254" height="236">
-            <p>10.5-inch Retina display<br>
-                A12 Bionic chip<br>
+            <p></p>
+            <p>Дисплей Retina 10,5˝<br>
+            <p></p>
+                Процессор A12 Bionic<br>
+            <p></p>
                 Touch ID<br>
-                Up to 256GB of storage<br>
-                Support for Apple Pencil<br>
-                (1st generation)<br>
-                Support for Smart Keyboard</p>
-            <p><a class="btn btn-secondary" href="#" role="button">Learn more &raquo;</a></p>
+            <p></p>
+                Ёмкость до 256 ГБ<br>
+            <p></p>
+                Поддержка Apple Pencil<br>
+            <p></p>
+                (1‑го поколения)<br>
+            <p></p>
+                Поддержка Smart Keyboard</p>
+            <p><a class="btn btn-secondary" href="#" role="button">Подробнее&raquo;</a></p>
         </div>
     </div>
 
-<div class="container">
-    <h2>iStore</h2>
-    <p>Фирменный магазин Apple в Бишкеке.</p>
-    <dl class="dl-horizontal"> <dt> <span class="glyphicon glyphicon-phone"></span>
-        Телефон:</dt>
-        <dd>+996 (555) 802 000 / +996 (707) 682 536</dd>
-        <dt><span class="glyphicon glyphicon-map-marker"></span>Адрес:</dt>
-        <dd>ул. Манаса, 40 (пер ул. Киевская)</dd>
-        <dt><span class="glyphicon glyphicon-time"></span>Режим работы:</dt>
-        <dd>Пн - Вс | 10:00 - 20:00</dd>
-    </dl>
-</div>
+    <footer>
+        <div class="container">
+            <div class = "me">
+                <h2>iStore</h2>
+                <p>Фирменный магазин Apple в Бишкеке.</p>
+                <dl class="dl-horizontal"> <dt> <span class="glyphicon glyphicon-phone"></span>
+                    Телефон:</dt>
+                    <dd>+996 (555) 802 000 / +996 (707) 682 536</dd>
+                    <dt><span class="glyphicon glyphicon-map-marker"></span>Адрес:</dt>
+                    <dd>ул. Манаса, 40 (пер ул. Киевская)</dd>
+                    <dt><span class="glyphicon glyphicon-time"></span>Режим работы:</dt>
+                    <dd>Пн - Вс | 10:00 - 20:00</dd>
+                </dl>
+            </div>
+        </div>
+    <script>
+        function funcMac() {
+            window.location = "https://istore.kg/category/mac/";
+        }
+    </script>
 </body>
 </html>

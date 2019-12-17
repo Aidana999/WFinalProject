@@ -4,6 +4,7 @@
     <title>Bootstrap Example</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="contact.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -17,20 +18,21 @@
             <a class="navbar-brand" href="#">iStore</a>
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">главная</a></li>
-            <li><a href="#">о нас</a></li>
+            <li class="active"><a href="home.html">главная</a></li>
+            <li><a href="index.html">о нас</a></li>
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">продукция <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Mac</a></li>
-                    <li><a href="#">iPhone</a></li>
-                    <li><a href="#">Apple Watch</a></li>
+                    <li><a onclick="funcMac()" href="#">Mac</a></li>
+                    <li><a onclick="funcMac()" href="#">iPhone</a></li>
+                    <li><a onclick="funcMac()" href="#">Apple Watch</a></li>
                     <li class="dropdown-header">гаджеты</li>
-                    <li><a href="#">GoPro</a></li>
-                    <li><a href="#">Beats</a></li>
+                    <li><a onclick="funcMac()"href="#">GoPro</a></li>
+                    <li><a onclick="funcMac()"href="#">Beats</a></li>
                 </ul>
             </li>
-            <li><a href="#">статьи</a></li>
-            <li><a href="#">контакты</a></li>
+            <li><a href="connect.html">сервис</a></li>
+            <li><a href="support.html">статьи</a></li>
+            <li><a href="contact.html">контакты</a></li>
         </ul>
         <form class="navbar-form navbar-left" action="/action_page.php">
             <div class="form-group">
@@ -94,17 +96,21 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <h2>iStore</h2>
-        <p>Фирменный магазин Apple в Бишкеке.</p>
-        <dl class="dl-horizontal"> <dt> <span class="glyphicon glyphicon-phone"></span>Телефон:</dt>
-            <dd>+996 (555) 802 000 / +996 (707) 682 536</dd>
-            <dt><span class="glyphicon glyphicon-map-marker"></span>Адрес:</dt>
-            <dd>ул. Манаса, 40 (пер ул. Киевская)</dd>
-            <dt><span class="glyphicon glyphicon-time"></span>Режим работы:</dt>
-            <dd>Пн - Вс | 10:00 - 20:00</dd>
-        </dl>
-    </div>
+    <footer>
+        <div class="container">
+            <div class = "me">
+                <h2>iStore</h2>
+                <p>Фирменный магазин Apple в Бишкеке.</p>
+                <dl class="dl-horizontal"> <dt> <span class="glyphicon glyphicon-phone"></span>
+                    Телефон:</dt>
+                    <dd>+996 (555) 802 000 / +996 (707) 682 536</dd>
+                    <dt><span class="glyphicon glyphicon-map-marker"></span>Адрес:</dt>
+                    <dd>ул. Манаса, 40 (пер ул. Киевская)</dd>
+                    <dt><span class="glyphicon glyphicon-time"></span>Режим работы:</dt>
+                    <dd>Пн - Вс | 10:00 - 20:00</dd>
+                </dl>
+            </div>
+        </div>
 </section>
 <!--end section.contacts-->
 <!-- Indicators -->
@@ -114,5 +120,10 @@
     <li class="item3"></li>
     <li class="item4"></li>
 </ol>
+<script>
+    function funcMac() {
+        window.location = "https://istore.kg/category/mac/";
+    }
+</script>
 </body>
 </html>
