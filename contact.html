@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>iStore</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="contact.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="icon" type="image/jpg" href="image.jpg">
+    <link rel="icon" type="image/jpg" href="img/image.jpg">
 </head>
 <body>
 
@@ -26,8 +26,8 @@
                     <li><a onclick="funcMac()" href="#">iPhone</a></li>
                     <li><a onclick="funcMac()" href="#">Apple Watch</a></li>
                     <li class="dropdown-header">гаджеты</li>
-                    <li><a onclick="funcMac()"href="#">GoPro</a></li>
-                    <li><a onclick="funcMac()"href="#">Beats</a></li>
+                    <li><a onclick="funcMac()" href="#">GoPro</a></li>
+                    <li><a onclick="funcMac()" href="#">Beats</a></li>
                 </ul>
             </li>
             <li><a href="connect.html">сервис</a></li>
@@ -42,7 +42,6 @@
         </form>
     </div>
 </nav>
-<body>
 
 <!--start section.contacts-->
 <section class="contacts">
@@ -59,40 +58,43 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 box">
-                <h4 class="title_form">Форма обратной связи</h4>
-                <div class="block_form">
-                    <div role="form" class="wpcf7" id="wpcf7-f152-o1" lang="ru-RU" dir="ltr">
-                        <div class="screen-reader-response"></div>
-                        <form action="/kontakty/#wpcf7-f152-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                            <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="152" />
-                                <input type="hidden" name="_wpcf7_version" value="5.0.5" />
-                                <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f152-o1" />
-                                <input type="hidden" name="_wpcf7_container_post" value="0" />
-                            </div>
-                            <div class="row_flex">
-                                <div class="col-md-6 col-sm-6 col-xs-12 box">
-                                    <div class="group">
-                                        <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Имя" /></span>
-                                    </div>
-                                    <div class="group">
-                                        <span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" placeholder="Телефон" /></span>
-                                    </div>
-                                    <div class="group">
-                                        <span class="wpcf7-form-control-wrap your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Тема" /></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6 col-xs-12 box">
-                                    <div class="group">
-                                        <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="20" rows="6" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Ваше сообщение"></textarea></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group_btn">
-                                <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit btn_main" />
-                            </div>
-                            <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>                            </div>
+
+                <form action="mailto:feriii1906@gmail.com" method="post" enctype="text/plain" class="forms-conn">
+                    <div style="display: inline-flex">
+
+                        <div class="form-group" >
+                            <label for="name2"  class="name-form-at "  >Имя</label>
+                            <input type="text" class="form-control sultan" id="name2"  name="Имя"  placeholder="Введите имя">
+                        </div>
+
+                        <div class="form-group" style="margin-left: 60px">
+                            <label for="surName"  class="name-form-at"  >Фамилия</label>
+                            <input type="text" class="form-control" id="surName"  name="Фамилия" placeholder="Введите Фамилию">
+                        </div>
+
+                    </div>
+
+                    <div style="display: inline-flex">
+
+                        <div class="form-group" >
+                            <label for="email"  class="name-form-at" >Эл. почта</label>
+                            <input type="email" class="form-control" id="email" name="Email"  placeholder="Введите эл. почту">
+                        </div>
+
+                        <div class="form-group" style="margin-left: 60px">
+                            <label for="phone"  class="name-form-at"  >Телефон</label>
+                            <input type="text" class="form-control" id="phone" name="Телефон"  placeholder="Введите номер телефона">
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <button type="submit" class="btn btn-info  grow" data-toggle="modal" data-target="#myModal">Отправить</button>
+
+                </form>
             </div>
         </div>
     </div>
@@ -111,6 +113,7 @@
                 </dl>
             </div>
         </div>
+    </footer>
 </section>
 <!--end section.contacts-->
 <!-- Indicators -->
@@ -120,6 +123,7 @@
     <li class="item3"></li>
     <li class="item4"></li>
 </ol>
+<div class="d-none d-md-block d-lg-block"></div>
 <script>
     function funcMac() {
         window.location = "https://istore.kg/category/mac/";

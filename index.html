@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>iStore</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="icon" type="image/jpg" href="image.jpg">
+    <link rel="icon" type="image/jpg" href="img/image.jpg">
 </head>
 <body>
 
@@ -20,14 +20,15 @@
         <ul class="nav navbar-nav">
             <li class="active"><a href="home.html">главная</a></li>
             <li><a href="index.html">о нас</a></li>
-            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">продукция <span class="caret"></span></a>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">продукция <span
+                    class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a onclick="funcMac()" href="#">Mac</a></li>
                     <li><a onclick="funcMac()" href="#">iPhone</a></li>
                     <li><a onclick="funcMac()" href="#">Apple Watch</a></li>
                     <li class="dropdown-header">гаджеты</li>
-                    <li><a onclick="funcMac()"href="#">GoPro</a></li>
-                    <li><a onclick="funcMac()"href="#">Beats</a></li>
+                    <li><a onclick="funcMac()" href="#">GoPro</a></li>
+                    <li><a onclick="funcMac()" href="#">Beats</a></li>
                 </ul>
             </li>
             <li><a href="connect.html">сервис</a></li>
@@ -44,7 +45,7 @@
 </nav>
 <div class="container">
     <h2>iStore</h2>
-    <img class="img-responsive" src="https://www.ormile.co.il/wp-content/uploads/2016/10/st6.jpg" alt="iStore" >
+    <img class="img-responsive" src="https://www.ormile.co.il/wp-content/uploads/2016/10/st6.jpg" alt="iStore">
 </div>
 <p></p>
 <!--start section.about-->
@@ -90,7 +91,8 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-3 block_time">
-                <div class="img_wrapper"><img src="https://istore.kg/wp-content/themes/iStore_NEW/image/svg/clock.svg" alt="clock"width="100" height="100"> </div>
+                <div class="img_wrapper"><img src="https://istore.kg/wp-content/themes/iStore_NEW/image/svg/clock.svg"
+                                              alt="clock" width="100" height="100"></div>
                 <p></p>
                 <ul class="list_time">
                     <li><span>Пн.</span>10:00 - 20:00</li>
@@ -108,11 +110,13 @@
 <!--end section.about-->
 <footer>
     <div class="container">
-        <div class = "me">
+        <div class="me">
             <h2>iStore</h2>
             <p>Фирменный магазин Apple в Бишкеке.</p>
-            <dl class="dl-horizontal"> <dt> <span class="glyphicon glyphicon-phone"></span>
-                Телефон:</dt>
+            <dl class="dl-horizontal">
+                <dt><span class="glyphicon glyphicon-phone"></span>
+                    Телефон:
+                </dt>
                 <dd>+996 (555) 802 000 / +996 (707) 682 536</dd>
                 <dt><span class="glyphicon glyphicon-map-marker"></span>Адрес:</dt>
                 <dd>ул. Манаса, 40 (пер ул. Киевская)</dd>
@@ -121,6 +125,8 @@
             </dl>
         </div>
     </div>
+</footer>
+<div class="d-none d-md-block d-lg-block"></div>
 <script>
     function funcMac() {
         window.location = "https://istore.kg/category/mac/";
